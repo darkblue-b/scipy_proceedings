@@ -51,14 +51,12 @@ ESX.
 Community
 
 
-
-
 OSGeo-Live: A Successful Common Environment
 -------------------------------------------
 
-The OSGeo-Live project is an example of both a sophisticated compute
-environment, and synergistic community process; quoting from the OSGeo-Live [1]
-website:
+The OSGeo-Live, a project the Open Source Geospatial Foundation, is a vivid example 
+of both a sophisticated compute environment, and synergistic community process;
+quoting from the OSGeo-Live [1] website:
 
 ''' The OSGeo-Live is a self-contained bootable DVD, USB thumb drive or Virtual
 Machine based on Xubuntu, that allows you to try a wide variety of open source
@@ -70,57 +68,42 @@ It provides pre-configured applications for a range of geospatial use cases,
 including storage, publishing, viewing, analysis and manipulation of data. It
 also contains sample datasets and documentation. '''
 
-The OSGeo-Live is formally a project of the Open Source Geospatial Foundation
-(OSGeo), an international body modeled on the Apache Foundation [3]. Eight
-years ago, there existed several very large and growing open-source geospatial
-projects, whose founders and developers decided would benefit from a common
-legal and technical infrastructure. Those projects included GRASS, Mapserver,
-GDAL and QGis.  At the same time. the OSGeo-Live began with a smaller open
-project based in Australia that sought to build an "easy to try and use"
-software environment for these and other spatial data applications. After some
-discussion and planning conducted between a handful of intrepid principals
-across the globe on the Internet, the nascent OSGeo-Live project committed
-itself to the larger OSGeo Foundation structure in its second year. More than
-fifty (50) open-source projects now actively maintain and improve their own
-install scripts, examples and documentation. After long years of "tepid"
-progress and iteration, a combination of techincal stability, tools sets,
-community awareness and clearly-defined steps to contribute, provided the basis
-for substantial growth.
+After long years of "tepid" progress and iteration, a combination of techincal stability, 
+tool sets, community awareness and clearly-defined steps to contribute, provided the basis
+for substantial growth. The OSGeo-Live is now very stable, easily incorporates advances in 
+components, and widely adopted.
 
-The OSGeo-Live is now very stable, easily incorporates advances in components,
-and widely adopted. Let's look at each of these building blocks briefly:
+More than fifty (50) open-source projects now actively maintain and improve their own
+install scripts, examples and documentation.
 
-Technical Stability An original goal of the OSGeo-Live was to operate well on
+Let's look at each of the building blocks briefly:
+
+Technical Stability: An original goal of the OSGeo-Live was to operate well on
 minimal hardware with broad support for common peripherals, and a license
 structure compatible with project goals. The XUbuntu version of Ubuntu Linux
 was chosen as a foundation, and it was been very successful. To this day,
-almost all applications would operate easily in very modest RAM and disk space
+almost all applications operate easily in very modest RAM and disk space
 (with the notable exception of Java-based software which requires substantially
 more RAM).
 
-The technical stability and critical success of Linux itself, and Ubuntu Linux
-in particular, is widely accepted and needs no further discussion here.
-However, the OSGeo-Live is not a "linux distribution" per se, primarily because
+The OSGeo-Live itself is not a "linux distribution" per se, primarily because
 the project does not provide a seamless upgrade process from one version to
 another. The OSGeo-Live relies on the Ubuntu/Debian/GNU, apt-based ecosystem to
 handle the heavy-lifting of system updates and upgrades. This is a win-win, as
 updates are proven reliable over a very large Ubuntu community process, and
-frees the OSGeo-Live project to concentrate on adding value to its featured
+the OSGeo-Live project is freed to concentrate on adding value to its featured
 components.
 
 As we shall see, due to a component architecture, individual software projects
 can be installed as-needed on a generic base.
 
-Tool Sets From the earliest days of \*nix computing, there has been a design
-goal of software tools that are commonly available, interoperate in predictable
-ways, and perform under all conditions. Decades later, the same design goals
-guide the choice of tool sets for the OSGeo-Live project. It cannot be
+Tool Sets: It cannot be
 overstated that, a key component to the success of the overall project has been
 the availability of widely-known and reliable tools, to developers from all
 parts of the world and in all major spoken languages. It is also important to
 note that, rather than require formal installation packages ".deb" for each
 project, the OSGeo-Live chose to use a simple install script format, one per
-installed project. This proved crucial in the earliest stages, as an outside
+installed project. This choice proved crucial in the earliest stages, as an outside
 open-source project evaluating participation in the Live could get started with
 fewer barriers to entry, and then add rigor and features later. Almost by
 definition, the candidate open-source projects had install scripts already
@@ -131,33 +114,67 @@ clear guidelines for installation conventions, a new open-source project could
 almost immediately develop and iterate their own install scripts in a
 straightforward way.
 
+--detailed build directions here--
+Particular example: web, including apache, WSGI, etc. Standard layout of web
+directory. Fully working examples available for each "kind" of project.
+
 Subversion repo -- asset heirarchy -- individual install scripts -- Live build
 scripts trac-subversion   http://trac.osgeo.org/osgeo/report/10
+see screenshots
 
-Community Awareness There are multiple drivers for adoption of a new
-technology, platform and community participation. The processes of initial
-awareness, trialability, adoption and iteration are well-known [4].
+Community Awareness: The processes of  adoption of new
+technology - initial awareness, trialability, adoption and iteration -
+are well-known [4]. 
 
-Part of the driver is likely the limited amount of funds who are doing
-geospatial fieldwork. These people need to be able to go out and be very
-efficient in the field. They also often lack advanced programming /
-administration skills.
+In the case of the OSGeo-Live, an orginial design goal was to provide tools
+to those doing geospatial fieldwork with limited resources, and who often lack
+advanced programming and administration skills. 
 
-Documentation of Applications - the Overview and Quickstart formats. About 5
-years ago, some funding came in for one of the contributors to document all of
-this. Included hiring a graphic designer to make intro and tutorial pages to
-introduce the templates for creating a package. This takes money (as compared
-to the tech stuff).
+Several years into the project, funding was established via a grant from the Australian 
+government to build documentation on applications in the Overview and Quickstart formats
+to professional graphic design standards. A single page for every application, 
+(Overview) and a second page with step-by-step instructions for a capable reader but no previous 
+exposure to the software (Quickstart). Each of these two pages is then translated into
+various spoken languages, primarily by volunteers. Much later, a graph of "percentage complete"
+for each human language group was added, which essentially makes translation into a sort of 
+competition. This has proved very successful. Note that the initial effort to build 
+standardized documentation required paid professionals. It seems unlikely that the 
+documentation would have been successful if only ad-hoc volunteer efforts were used.
 
+The Open Source Geospatial Foundation (OSGeo) the hub for a variety of projects to interoperate, and
+potentially share with each other / synergy. OSGeo raises awareness of other projects.
 
-OSGeo provides a place for a variety of projects to interoperate, and
-potentially share with each other / synergy. OSGeo raises awareness of other
-projects.
+(see the transfer of tech, e.g., military technology to environmental applications)
+(Maybe include story about Haiti response with open source mapping)
 
 Steps to Contribute
 
 A FAQ was written and published in an easily accessible location. Outreach was
 conducted through formal and informal networks.
+
+
+Major step in diffusion is folks knowing what the thing is at all. Value add /
+branding - OSGeo has credibility from foundation status, participants,
+consistent / good graphic design.
+
+[1] http://live.osgeo.org 
+[2]  build stuff
+[3]  repo stuff
+[4] Diffusion of Innovation; Rogers et al 1962 
+http://en.wikipedia.org/wiki/Diffusion_of_Innovations
+
+misc cut text --
+
+Eight
+years ago, there existed several very large and growing open-source geospatial
+projects, whose founders and developers decided would benefit from a common
+legal and technical infrastructure. Those projects included GRASS, Mapserver,
+GDAL and QGis.  At the same time. the OSGeo-Live began with a smaller open
+project based in Australia that sought to build an "easy to try and use"
+software environment for these and other spatial data applications. After some
+discussion and planning conducted between a handful of intrepid principals
+across the globe on the Internet, the nascent OSGeo-Live project committed
+itself to the larger OSGeo Foundation structure in its second year. 
 
 missing title ------------- What are the steps that established credibility to
 get projects contributing to the distribution. Initially, just shell scripts to
@@ -172,27 +189,13 @@ developers: shell, Perl, or Python. Scripts may call package managers, few
 constraints (e.g., keep recipes contained to a particular directory). Core,
 customizable scripts designed to bootstrap new recipes.
 
-Particular example: web, including apache, WSGI, etc. Standard layout of web
-directory. Fully working examples available for each "kind" of project.
-
 The result is that certain tools are becoming more and more visible. Projects
 are encouraged that are implemented in standard frameworks (i.e., not Forth).
 
 There's still not complete consensus, but the project is moving towards some
-consensus infrastructure. Also see the transfer of, e.g., military technology
-to environmental applications.
+consensus infrastructure. Also 
 
-Maybe include story about Jamaica response with open source mapping.
-
-Major step in diffusion is folks knowing what the thing is at all. Value add /
-branding - OSGeo has credibility from foundation status, participants,
-consistent / good graphic design.
-
-[1] http://live.osgeo.org [2]
-http://www.osgeo.org/content/faq/foundation_faq.html [3] [4] Diffusion of
-Innovation; Rogers et al 1962 
-http://en.wikipedia.org/wiki/Diffusion_of_Innovations
-
+--
 
 Other virtual machines ----------------------
 

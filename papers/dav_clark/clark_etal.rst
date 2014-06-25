@@ -97,12 +97,11 @@ components.
 As we shall see, due to a component architecture, individual software projects
 can be installed as-needed on a generic base.
 
-Tool Sets: It cannot be
-overstated that, a key component to the success of the overall project has been
-the availability of widely-known and reliable tools, to developers from all
-parts of the world and in all major spoken languages. It is also important to
-note that, rather than require formal installation packages ".deb" for each
-project, the OSGeo-Live chose to use a simple install script format, one per
+Tool Sets: It cannot be overstated that, a key component to the success of the 
+overall project has been the availability of widely-known and reliable tools, 
+to developers from all parts of the world and in all major spoken languages. 
+It is also important to note that rather than require formal installation packages 
+".deb" for each project, the OSGeo-Live chose to use a simple install script format, one per
 installed project. This choice proved crucial in the earliest stages, as an outside
 open-source project evaluating participation in the Live could get started with
 fewer barriers to entry, and then add rigor and features later. Almost by
@@ -122,6 +121,59 @@ Subversion repo -- asset heirarchy -- individual install scripts -- Live build
 scripts trac-subversion   http://trac.osgeo.org/osgeo/report/10
 see screenshots
 
+Directory gisvm - a detailed layout
+--
+File Structure:
+==============
+
+bin/
+     /main.sh # Call all the other scripts
+       /setup.sh # Download, and install all core files and set up config files
+       /install_project1.sh # Download, and install all files for project1
+       /install_project2.sh # Download, and install all files for project2
+       /install_desktop.sh
+       /install_main_docs.sh
+       /setdown.sh
+
+       /build_iso.sh
+         /load_mac_installers.sh
+         /load_win_installers.sh
+
+     bootstrap.sh
+     inchroot.sh
+     package.sh
+     sync_livedvd.sh
+
+app-conf/
+     /project1/   # config files used by install_package1.sh script
+     /project2/   # config files used by install_package2.sh script
+
+
+app-data/
+     /project1/   # data & help files used by package1
+     /project2/   # data & help files used by package2
+
+desktop-conf/     # data files and images used for the main desktop background
+     
+doc/
+     /index_pre.html            # header for summary help page
+     /index_post.html           # footer for summary help page
+     /arramagong.css
+     /jquery.js
+     /template_definition.html  # example of project_definition.html file
+     /template_description.html # example of project_description.html file
+     /template_licence.html     # incorportate into project_description.html???
+
+     /descriptions/
+       /package_definition.html    # short (1 sentence) summary of installed pkg 
+       /package_description.html   # getting started instructions for the LiveDVD user
+
+download/       # copy of the livedvd project's download server webpage
+
+sources.list.d/ # Supplimentary package repositories for /etc/apt/sources.list
+--
+
+
 Community Awareness: The processes of  adoption of new
 technology - initial awareness, trialability, adoption and iteration -
 are well-known [4]. 
@@ -131,15 +183,17 @@ to those doing geospatial fieldwork with limited resources, and who often lack
 advanced programming and administration skills. 
 
 Several years into the project, funding was established via a grant from the Australian 
-government to build documentation on applications in the Overview and Quickstart formats
-to professional graphic design standards. A single page for every application, 
-(Overview) and a second page with step-by-step instructions for a capable reader but no previous 
-exposure to the software (Quickstart). Each of these two pages is then translated into
-various spoken languages, primarily by volunteers. Much later, a graph of "percentage complete"
-for each human language group was added, which essentially makes translation into a sort of 
-competition. This has proved very successful. Note that the initial effort to build 
-standardized documentation required paid professionals. It seems unlikely that the 
-documentation would have been successful if only ad-hoc volunteer efforts were used.
+government to build application documentation in a common one-page format,
+meeting professional graphic design criteria. One, single page for each and every application, 
+(Overview) and a second page with step-by-step introductory instructions (Quickstart), aimed at 
+a capable reader but assuming no previous exposure to the software. Each one of these two pages 
+is then translated into various spoken languages, primarily by volunteers. 
+
+Much later, a graph of "percentage complete" for each human language group was added, 
+which essentially makes translation into a sort of a competition. This has proved successful. 
+Note that the initial effort to build standardized documentation required paid professionals. 
+It seems unlikely that the documentation would have been successful based only on ad-hoc 
+volunteer efforts.
 
 The Open Source Geospatial Foundation (OSGeo) the hub for a variety of projects to interoperate, and
 potentially share with each other / synergy. OSGeo raises awareness of other projects.
